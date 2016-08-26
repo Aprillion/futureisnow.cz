@@ -1,5 +1,5 @@
 body {
-  font-family: 'Titillium Web', sans-serif; 
+  font-family: 'Titillium Web', sans-serif;
   padding-bottom: 100px;
 }
 
@@ -19,11 +19,11 @@ background: url('header-background.jpg');
 
 .nadpis  {
   margin-top: 20px;
-  
+
 }
 
 .menu {
-  
+
 }
 
 .panel{
@@ -68,12 +68,12 @@ background: url('header-background.jpg');
 
 .form-textarea {
   height: 122px !important;
-} 
+}
 
 .article-name {
 margin-bottom: 25px;
   font-size: 46px;
-  
+
 }
 .article-image {
   width: 100%;
@@ -82,4 +82,16 @@ margin-bottom: 25px;
 .socialicon{
   margin-top: -6px;
   border-radius: 50%;
+}
+.github {
+  display: none;
+}
+
+
+
+
+@media (min-width: 480px) {
+  .github {
+    display: inline-block;
+  }
 }
