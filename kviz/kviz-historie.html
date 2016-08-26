@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The future is now</title>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="otazky.css">
+</head>
+  
+  
+<body>  
+  
+  <script>
+    var otazky = [
+      { 
+        nadpis: "Otázka 1", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-boat-railway.jpg",
+        imgOdpoved: "http://www.marktraffic.com/wp-content/uploads/2014/03/jeep-boat.jpg",
+        otazka: "Bylo vynalezeno vozidlo, které dokáže jezdit jak po zemi, tak ve vodě?",
+        popis: "Lodě, které jezdí po kolejích nepoužíváme, ale existují tzv. obojživelné auta, které mohou jezdit i ve vodě.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 2", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-flying-machines.jpg",
+        imgOdpoved: "",
+        otazka: "Mohou lidé samostatně létat?",
+        popis: "I když létat můžeme již dlouho, stále se nám nepovedlo vynalézt přístroj, se kterým by lidé mohli vzlétat jednotlivě.",
+        odpoved: "ne"
+      },
+      { 
+        nadpis: "Otázka 3", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-house-train.jpg",
+        imgOdpoved: "http://molotilo.com/wp-content/uploads/2016/07/mobile-home.jpg",
+        otazka: "Vynalezl již někdo pohyblivý dům?",
+        popis: "Sice ne na kolejích, ale pojízdné domy lidé využívají již od 50. let minulého století.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 4", 
+        imgOtazka: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/France_in_XXI_Century._School.jpg/800px-France_in_XXI_Century._School.jpg",
+        imgOdpoved: "",
+        otazka: "Mohou se lidé učit bez námahy?",
+        popis: "Sice si to všichni přejeme, ale ještě se nic takového vynalézt nepodařilo.",
+        odpoved: "ne"
+      },
+      { 
+        nadpis: "Otázka 5", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-outside-theatre.jpg",
+        imgOdpoved: "http://bossfight.co/wp-content/uploads/2015/12/boss-fight-free-high-quality-stock-images-photos-photography-old-tv.jpg",
+        otazka: "Mohou lidé sledovat přestavení z pohodlí domova?",
+        popis: "Ano, sledovat představení je možné. Díky roku 1926, kdy byla vynalezena televize.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 6", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-moving-pavement.jpg",
+        imgOdpoved: "http://img.archiexpo.com/images_ae/photo-g/80010-1552657.jpg",
+        otazka: "Byl vynalezen hýbající se chodník?",
+        popis: "Ano, známe je pod názvem travelátor a setkáme se s nimi na letištích. První byl zkonstruován již v roce 1893, což je o čtyři roky dříve, než jeho nástupce eskalátor.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 7", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-personal-airship.jpg",
+        imgOdpoved: "",
+        otazka: "Myslíš si, že byly vynalezeny vynášedla, která lze velmi přesně ovládat?",
+        popis: "Bohužel v kolonách budeme muset ještě nějaký čas čekat. Létajících aut se jen tak nedočkáme.",
+        odpoved: "ne"
+      },
+      { 
+        nadpis: "Otázka 8", 
+        imgOtazka: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/France_in_XXI_Century._Electric_scrubbing.jpg/800px-France_in_XXI_Century._Electric_scrubbing.jpg",
+        imgOdpoved: "http://i2.irishmirror.ie/incoming/article5131388.ece/ALTERNATES/s615b/Robot-Vacuum-Cleaner.jpg",
+        otazka: "Myslíš si, že existují automatické uklízečky?",
+        popis: "Ano, existují robotické vysavače.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 9", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-weather-control.jpg",
+        imgOdpoved: "",
+        otazka: "Myslíš si, že lidstvo může řídit počasí?",
+        popis: "Ne, ale pomalu se blížíme. V roce 2013 američtí vědci dokázali uměle vytvořit mrak.",
+        odpoved: "ne"
+      },
+      { 
+        nadpis: "Otázka 10", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-tourist-boats.jpg",
+        imgOdpoved: "http://lide.uhk.cz/fim/student/kubesmi1/pictures/seascope-2.jpg",
+        otazka: "Myslíš si, že existují takové lodě?",
+        popis: "Ano, jsou výletní ponorky, ve kterých můžete sledovat, co je kolem vás. Stejně tak máme ponorky a obyčejné lodě s proskleným dnem.",
+        odpoved: "ano"
+      },
+      { 
+        nadpis: "Otázka 11", 
+        imgOtazka: "http://all-that-is-interesting.com/wordpress/wp-content/uploads/2013/06/1900-postcards-water-stroll.jpg",
+        imgOdpoved: "",
+        otazka: "Myslíš si, že mohou lidé chodit po vodě?",
+        popis: "Bohužel ne, většinou jde jen o triky, kdy je pod vodou průhledná deska.",
+        odpoved: "ne"
+      },
+    ]
+  </script>
+  
+  
+  <h1 class="kviz-nadpis">Historie</h1>
+  
+  <p class="kviz-popis">
+    V tomto kvíze si otestujete své znalosti z dob dávno minulých. Tipněte si, jestli vynálezy na obrázcích existují či ne.  
+  </p>
+  
+  
+  <div class="otazky">
+    
+    <div id="sablona" class = "otazka sablona">
+      
+      <div class="otazka-obal">
+        
+      
+      <div class="otazka-obsah">
+        
+        <h3 class="otazka-nadpis">nadpis</h3>
+
+        <div class="otazka-obrazky">              
+          <img class="otazka-img otazka-img-otazka" src= "">          
+          <img class="otazka-img otazka-img-odpoved" src= "hnusak.jpg">
+          
+          <div class="otazka-status">
+            <div  class= "otazka-uspech">
+              Výborně
+            </div>
+            <div  class= "otazka-neuspech">
+              Netrefil ses
+            </div>  
+          </div>
+        </div>
+
+       
+
+        <p class = "otazka-text"> </p>
+
+        <div class="otazka-tlacitka">
+          <button  class="otazka-ano">
+            ano
+          </button>
+          <button  class="otazka-ne">
+            ne
+          </button>
+        </div>
+
+
+        <p  class= "otazka-popis"> </p>
+        
+        
+        <button class="otazka-dalsi">
+          <span>Pokračuj na další otázku</span>
+          <img src="arrow-down.png">
+        </button>
+        
+      </div>
+
+    </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="skore-oblast" id="skore">
+      
+    <div class="skore">
+
+      <h2 class="skore-nadpis">
+        Shrnutí kvízu
+      </h2>
+
+      <p class="skore-text">
+        Dosáhnul jsi konce kvízu. Níže se můžeš dočíst, jak ti to šlo.
+      </p>
+
+      <table class="skore-tabulka table table-bordered">
+
+        <tr>
+          <th>Správné odpovědi</th>
+          <th>Počet otázek</th>
+          <th>Úspěšnost</th>
+        </tr>
+
+        <tr>
+          <td><i id="spravneOdpovedi">0</i></td>
+          <td><i id="pocetOdpovedi">0</i></td>
+          <td><strong id="uspesnost">0%</strong></td>
+        </tr>
+
+      </table>
+      
+      <h2 class="skore-nadpisodmena">A tady je vaše odměna, kočka jen pro tebe!</h2>
+      
+      <div class="skore-odmena">
+        <img src="http://thecatapi.com/api/images/get?format=src&type=gif">
+      </div>
+
+    </div>
+  
+  </div>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="otazky.js"></script>
+  
+</body>
+</html>

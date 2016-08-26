@@ -1,0 +1,233 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  background: white;
+}
+
+.kviz-nadpis {
+  text-align: center;
+  margin: 50px 24px 20px;
+}
+
+.kviz-popis {
+  padding: 30px 30px 0;
+  text-align: center;
+  max-width: 40em;
+  margin: auto;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(4px)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+
+.otazka {    
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.otazka-obal {
+  width: 100%;
+  background: rgba(0,0,0,0.06);  
+  text-align:center;
+}
+.otazka-obsah {
+  position: relative;
+  max-width:700px;
+  margin:auto;
+  padding: 40px 20px;
+}
+
+.otazka-nadpis {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.otazka-obrazky {
+  position: relative;
+  font-size: 0;
+  text-align: left;
+}
+.otazka-img {  
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  vertical-align: middle;  
+}
+
+.otazka-obrazky:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: calc(50% - 20px);
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(255,255,255,0.75);
+  opacity: 0;
+}
+.otazka-img-odpoved {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.otazka-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.otazka-tlacitka {
+  margin: 20px 0;
+}
+.otazka-tlacitka button{ 
+  padding: 10px 20px; 
+  text-transform: uppercase; 
+  font-weight: bold; 
+  color: #444;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.1);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.otazka-tlacitka button:hover {
+  background: lightyellow;
+}
+.otazka-tlacitka button:focus, .otazka-tlacitka button:active {
+  background: lightyellow;
+  outline: none;
+  transform: translate(1px, 1px);
+}
+.otazka-ano {margin-right: 50px;}
+.otazka-ne {margin-left: 50px;}
+.otazka-popis {
+  display:none;
+  min-height: 110px;
+}
+.otazka-status {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+  pointer-events: none;
+  height: 1em;
+  width: calc(50% - 20px);
+  line-height: 1;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 500ms ease;
+  text-align: center;
+}
+.otazka-uspech {
+  display:none;
+  color: greenyellow;
+}
+.otazka-neuspech {
+  display:none;
+  color: red;
+}
+.otazka-dalsi {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10%;
+  margin: auto;
+  width: 20em;
+  height: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+.otazka-dalsi img {
+  display: block;
+  margin: 10px auto;
+  animation: slideDown 2s ease infinite;
+}
+
+.otazka.sablona { display:none; }
+
+
+.otazka.uspech .otazka-img-odpoved, 
+.otazka.neuspech .otazka-img-odpoved,
+.otazka.uspech .otazka-status, 
+.otazka.neuspech .otazka-status, 
+.otazka.neuspech .otazka-obrazky:before,
+.otazka.uspech .otazka-obrazky:before{
+  opacity: 1;
+}
+.otazka.uspech .otazka-img-skryvaci,
+.otazka.neuspech .otazka-img-skryvaci {
+  opacity: 0;
+}
+
+.otazka.uspech .otazka-uspech,
+.otazka.uspech .otazka-popis {
+  display: block;
+}
+.otazka.uspech .otazka-tlacitka,
+.otazka.uspech .otazka-text {
+  display: none;
+}
+
+.otazka.neuspech .otazka-neuspech,
+.otazka.neuspech .otazka-popis {
+  display: block;
+}
+.otazka.neuspech .otazka-tlacitka,
+.otazka.neuspech .otazka-text {
+  display: none;
+}
+
+
+
+
+
+.skore-oblast {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+}
+
+.skore {
+  
+}
+
+.skore-nadpis {
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+.skore-text {
+  margin-bottom: 30px;
+}
+.skore-tabulka {
+  margin-bottom: 30px;
+}
+
+.skore-nadpisodmena {
+  margin-bottom: 30px;
+}
+.skore-odmena {
+  text-align: center;
+}

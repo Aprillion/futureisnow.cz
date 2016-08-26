@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The future is now</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="otazky.css">
+  </head>
+
+
+  <body>  
+
+    <script>
+      var otazky = [
+        { 
+          nadpis: "Otazka 1", 
+          imgOtazka: "http://www.adweek.com/socialtimes/files/2013/04/1966-1969-captain-kirks-gold-cell-phone-in-star-trek.jpg",
+          imgOdpoved: "http://www.mobilmania.cz/Files/Obrazky/art11/!A800/A800_11.jpg",
+          otazka: "Existuje už něco jako přenosná telefoní budka?",
+          popis: "Jistěže ano!",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 2", 
+          imgOtazka: "http://static.tvtropes.org/pmwiki/pub/images/picard_padd_6592.jpg",
+          imgOdpoved: "http://www.todaysiphone.com/wp-content/uploads/2015/01/Steve-Jobs-original-iPad.jpg",
+          otazka: "Bylo už toto vynalezeno?",
+          popis: "Není to tak dlouho od prvního tabletu v roce 2010.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 3", 
+          imgOtazka: "http://67.media.tumblr.com/2cf682f2888b34ea1867f68db402b1aa/tumblr_n4am8mDj6D1sveyjbo1_1280.png",
+          imgOdpoved: "http://www.vodnikovo.cz/wp-content/uploads/2013/06/Glass.jpg",
+          otazka: "Existují takové brýle?",
+          popis: "Dnes známé jako google brýle",
+          odpoved: "ano"},
+        { 
+          nadpis: "Otazka 4", 
+          imgOtazka: "http://www.treknews.net/wp-content/uploads/2015/04/brent-spiner-tng-tunic-03.jpg",
+          imgOdpoved: "",
+          otazka: "Co android s vlastnostmi člověka?",
+          popis: "Robot, který by byl schopný emocí zatím neexistije.",
+          odpoved: "ne"
+        },
+        { 
+          nadpis: "Otazka 5", 
+          imgOtazka: "https://silverspock.files.wordpress.com/2011/12/377984_2673064507253_1275369662_33110409_1722449274_n.jpg?w=487&h=325",
+          imgOdpoved: "http://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2015/12/Best_cheap_Android_phones.jpg?itok=XjQz6490",
+          otazka: "A co mobil s androidem?",
+          popis: "Proč ne.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 6", 
+          imgOtazka: "http://vignette4.wikia.nocookie.net/memoryalpha/images/d/d9/Geordi_La_Forge_2368.jpg/revision/latest?cb=20120205164003&path-prefix=en",
+          imgOdpoved: "https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s320x320/e35/12105050_1062925333720267_1069733590_n.jpg",
+          otazka: "Byl už vynalezen vizor, který by umožnil slepému vidět?",
+          popis: "Bohužel ne, ale někdo se toho nápadu nehodlá vzdát.",
+          odpoved: "ne"
+        }
+
+      ]
+    </script>
+
+
+    <h1 class="kviz-nadpis">Star Trek</h1>
+
+    <p class="kviz-popis">
+      Nebo až útesů má geometrické pak pohřbeného. Poznatky, sorta i typy projev náhodou, už dozadu energická ztratí geochemika genetice jednoduché, zobrazuje expedičním šimpanz v plně věřit nazvaného. 
+    </p>
+
+
+    <div class="otazky">
+
+      <div id="sablona" class = "otazka sablona">
+
+        <div class="otazka-obal">
+
+
+          <div class="otazka-obsah">
+
+            <h3 class="otazka-nadpis">nadpis</h3>
+
+            <div class="otazka-obrazky">              
+              <img class="otazka-img otazka-img-otazka" src= "">          
+              <img class="otazka-img otazka-img-odpoved" src= "hnusak.jpg">
+
+              <div class="otazka-status">
+                <div  class= "otazka-uspech">
+                  Výborně
+                </div>
+                <div  class= "otazka-neuspech">
+                  Netrefil ses
+                </div>  
+              </div>
+            </div>
+
+
+
+            <p class = "otazka-text"> </p>
+
+            <div class="otazka-tlacitka">
+              <button  class="otazka-ano">
+                ano
+              </button>
+              <button  class="otazka-ne">
+                ne
+              </button>
+            </div>
+
+
+            <p  class= "otazka-popis"> </p>
+
+
+            <button class="otazka-dalsi">
+              <span>Pokračuj na další otázku</span>
+              <img src="arrow-down.png">
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="skore-oblast" id="skore">
+
+      <div class="skore">
+
+        <h2 class="skore-nadpis">
+          Shrnutí kvízu
+        </h2>
+
+        <p class="skore-text">
+          Dosáhnul jsi konce kvízu. Níže se můžeš dočíst, jak ti to šlo.
+        </p>
+
+        <table class="skore-tabulka table table-bordered">
+
+          <tr>
+            <th>Správné odpovědi</th>
+            <th>Počet otázek</th>
+            <th>Úspěšnost</th>
+          </tr>
+
+          <tr>
+            <td><i id="spravneOdpovedi">0</i></td>
+            <td><i id="pocetOdpovedi">0</i></td>
+            <td><strong id="uspesnost">0%</strong></td>
+          </tr>
+
+        </table>
+
+        <h2 class="skore-nadpisodmena">A tady je vaše odměna, kočka jen pro tebe!</h2>
+
+        <div class="skore-odmena">
+          <img src="http://thecatapi.com/api/images/get?format=src&type=gif">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="otazky.js"></script>
+
+  </body>
+</html>

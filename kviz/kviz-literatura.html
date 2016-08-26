@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The future is now</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="otazky.css">
+  </head>
+
+
+  <body>  
+
+    <script>
+      var otazky = [
+        { 
+          nadpis: "Otázka 1", 
+          imgOtazka: "http://fortifikace.cz/wp-content/uploads/2015/05/fat_man.jpg",
+          imgOdpoved: "http://1gr.cz/fotky/idnes/13/091/org/OZ4d9f05_bomb.jpg",
+          otazka: "Myslíš si, že H.G.Wells předpověděl vynález atomové bomby?",
+          popis: "Ano, její sestrojení předpověděl  v roce 1914. Ta byla ale vynalezena až roku 1942.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otázka 2", 
+          imgOtazka: "https://i.cdn.nrholding.net/27063605/",
+          imgOdpoved: "http://www.novaline.cz/pictures/zehlicka-retro-10cm/zehlicka-retro-10cm.jpg",
+          otazka: "Myslíš si, že Leonardo da Vinci předpověděl vynález žehličky?",
+          popis: "Leonardo da Vinci žil v 15. století, žehlička již existovala 1600 let.",
+          odpoved: "ne"
+        },
+        { 
+          nadpis: "Otázka 3", 
+          imgOtazka: "http://1gr.cz/fotky/idnes/12/083/org/KUZ2c6bf1_A11_salutovani.jpg?v=7",
+          imgOdpoved: "http://1gr.cz/fotky/lidovky/11/102/lnorg/WOK3e6fe1_MELIES.JPG",
+          otazka: "Myslíš si, že Jules Verne předpověděl přistání na měsíci?",
+          popis: "Ano, v roce 1865 vydal román Ze Země na Měsíc, tudíž předpověděl přistání na Měsíci o 104 let dříve! Dokonce i v románu uvedl, že n Měsíci je nízká gravitace, což se tenkrát ani nevědělo.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otázka 4", 
+          imgOtazka: "http://www.papirove-modely.cz/img/upload/modely/titanic-wreck/20130617193034-209760-v.jpg",
+          imgOdpoved: "http://cdn.lifedaily.com/wp-content/uploads/2015/12/01-titanic.jpg",
+          otazka: "Předpověděla spisovatelka J.K.Rowling potopení Titaniku?",
+          popis: "Určitě ne. Nejenže se v žádném ze svých děl o Titaniku ani nezmiňuje, dokonce se narodila o 53 let později, než se Titanik potopil.",
+          odpoved: "ne"
+        },
+        { 
+          nadpis: "Otázka 5", 
+          imgOtazka: "http://img.ihned.cz/attachment.php/10/62412010/bGyzjNM58SL9JK04o2nC3EAiPfBalTDe/Mazda_2_Haiku_do_mesta_i_na_okresky.jpg",
+          imgOdpoved: "https://trtpost-wpengine.netdna-ssl.com/files/2015/04/old-plane-680x400.jpg",
+          otazka: "Myslíš, že Roger Bacon předpověděl ve 13. století vynález aut a letadel?",
+          popis: "Ano, neuvěřitelných šest století před uskutečněním. 'Vozy mohou být postaveny tak, že se obejdou bez zvířat a budou se pohybovat velkou rychlostí.’ ",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otázka 6", 
+          imgOtazka: "https://pixabay.com/static/uploads/photo/2015/05/25/05/27/network-782707_960_720.png",
+          imgOdpoved: "http://cf.ydcdn.net/1.0.1.59/images/computer/_STMPUNK.JPG",
+          otazka: "Předpověděl Mark Twain vynález internetu?",
+          popis: "Ano, předpověděl ho ve své knize The Great Dark publikované na konci 19. století.",
+          odpoved: "ano"
+        },
+      ]
+    </script>
+
+
+    <h1 class="kviz-nadpis">Literatura</h1>
+
+    <p class="kviz-popis">
+      Tento kvíz je spíše o předpovídání vynálezů, než o jejich realizaci. Jedná se o autory, kteří ve svých dílech mohli zmínit nějaký vynález, který k dnešnímu datu existuje.
+    </p>
+
+
+    <div class="otazky">
+
+      <div id="sablona" class = "otazka sablona">
+
+        <div class="otazka-obal">
+
+
+          <div class="otazka-obsah">
+
+            <h3 class="otazka-nadpis">nadpis</h3>
+
+            <div class="otazka-obrazky">              
+              <img class="otazka-img otazka-img-otazka" src= "">          
+              <img class="otazka-img otazka-img-odpoved" src= "hnusak.jpg">
+
+              <div class="otazka-status">
+                <div  class= "otazka-uspech">
+                  Výborně
+                </div>
+                <div  class= "otazka-neuspech">
+                  Netrefil ses
+                </div>  
+              </div>
+            </div>
+
+
+
+            <p class = "otazka-text"> </p>
+
+            <div class="otazka-tlacitka">
+              <button  class="otazka-ano">
+                ano
+              </button>
+              <button  class="otazka-ne">
+                ne
+              </button>
+            </div>
+
+
+            <p  class= "otazka-popis"> </p>
+
+
+            <button class="otazka-dalsi">
+              <span>Pokračuj na další otázku</span>
+              <img src="arrow-down.png">
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="skore-oblast" id="skore">
+
+      <div class="skore">
+
+        <h2 class="skore-nadpis">
+          Shrnutí kvízu
+        </h2>
+
+        <p class="skore-text">
+          Dosáhnul jsi konce kvízu. Níže se můžeš dočíst, jak ti to šlo.
+        </p>
+
+        <table class="skore-tabulka table table-bordered">
+
+          <tr>
+            <th>Správné odpovědi</th>
+            <th>Počet otázek</th>
+            <th>Úspěšnost</th>
+          </tr>
+
+          <tr>
+            <td><i id="spravneOdpovedi">0</i></td>
+            <td><i id="pocetOdpovedi">0</i></td>
+            <td><strong id="uspesnost">0%</strong></td>
+          </tr>
+
+        </table>
+
+        <h2 class="skore-nadpisodmena">A tady je vaše odměna, kočka jen pro tebe!</h2>
+
+        <div class="skore-odmena">
+          <img src="http://thecatapi.com/api/images/get?format=src&type=gif">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="otazky.js"></script>
+
+  </body>
+</html>

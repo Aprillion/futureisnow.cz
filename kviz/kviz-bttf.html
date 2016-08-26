@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The future is now</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="otazky.css">
+  </head>
+
+
+  <body>  
+
+    <script>
+      var otazky = [
+        { 
+          nadpis: "Otazka 1", 
+          imgOtazka: "https://vice-images.vice.com/images/content-images/2014/12/30/tony-hawk-talks-about-the-rise-of-the-hoverboard-456-body-image-1419972525.jpeg?resize=1000:*&output-quality=75",
+          imgOdpoved: "https://www.wired.com/wp-content/uploads/2015/06/lexus-hoverboard-ft.jpg",
+          otazka: "Byl hoverboard vytvořen?",
+          popis: "Ano existuje!! Hoverboard byl vynalezen firmou Lexus již před rokem.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 2", 
+          imgOtazka: "http://kneelbeforeblog.co.uk/wp-content/uploads/2015/10/vlcsnap-00948.png",
+          imgOdpoved: "http://techchunks.com/wp-content/uploads/2011/01/Xbox-360-Kinect-May-Be-Scratching-Damaging-Eating-and-Killing-Game-Discs.jpg",
+          otazka: "Je možné hraní her bez použití ovladače?",
+          popis: "Ano, tento typ her používá Xbox Kinect-style gaming",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 3", 
+          imgOtazka: "http://media.t3.com/img/resized/ni/xxl_nikeselflace-970-80.jpg",
+          imgOdpoved: "http://cdn.sneakernews.com/wp-content/uploads/2015/10/nike-mag-2-1920.jpg",
+          otazka: "Je možné najít tyto samo zavazující se boty v dnešní době najít?",
+          popis: "Ano, tyto boty se nazívají 2015 Nike Mag",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 4", 
+          imgOtazka: "http://img.ihned.cz/attachment.php/660/62138660/l928Wi1qCUVkebhGILSNrdyaA0JxF3Mm/cars_back_to_the_future_delorean_dmc-12_desktop_3000x1480_hd-wallpaper-556039.jpg",
+          imgOdpoved: "https://unsplash.it/500/500/?random",
+          otazka: "Existují létající auta?",
+          popis: "Samozřejmě že ne.",
+          odpoved: "ne"
+        },
+        { 
+          nadpis: "Otazka 5", 
+          imgOtazka: "http://static3.techinsider.io/image/56271856bd86effb5b8b857f-1200/self-working-gas-stations.jpg",
+          imgOdpoved: "http://cdn.atl.clicrbs.com.br/wp-content/uploads/sites/27/2015/08/teslacharger.jpg",
+          otazka: "A co robot automaticky naplňují nádrže aut?",
+          popis: "Tesla vytvořila robota podobného hadu pro elektrická auta.",
+          odpoved: "ano" 
+        },
+        { 
+          nadpis: "Otazka 6", 
+          imgOtazka: "http://i4.mirror.co.uk/incoming/article6649937.ece/ALTERNATES/s615b/Back-to-the-Future-II.jpg",
+          imgOdpoved: "http://oidnes.cz/15/012/cl5/RAM58b28b_appletouchid.jpg",
+          otazka: "Používáme na něco naše otisky prstů?",
+          popis: "Ano používáme, ale ne na otevírání domů, jako ve filmu.",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 7", 
+          imgOtazka: "http://www.heyuguys.com/images/2012/12/Back-to-the-Future-2-3D-Movie.jpg",
+          imgOdpoved: "http://data.pcworld.cz/img/article_title/title_l/6c/4c6f3ed446bce0685660e8fe930b64.jpg",
+          otazka: "Existují filmy ve 3D?",
+          popis: "Samozřejmě že ano",
+          odpoved: "ano"
+        },
+        { 
+          nadpis: "Otazka 8", 
+          imgOtazka: "http://www.techguide.com.au/wp-content/uploads/2015/10/BTTFfacts16.gif",
+          imgOdpoved: "https://unsplash.it/500/500/?random",
+          otazka: "Vynalezl někdo samo sušící se oblečení?",
+          popis: "Samozřejmě že ne.",
+          odpoved: "ne"
+        },
+        { 
+          nadpis: "Otazka 9", 
+          imgOtazka: "http://cbsnews1.cbsistatic.com/hub/i/r/2015/10/21/99f6edbe-a496-4124-b15f-5e214f9a0e56/resize/620x465/27b9597ad2c0542011580be548a199ca/screen-shot-2015-10-21-at-10-45-57-am.png",
+          imgOdpoved: "http://xahoithongtin.com.vn/dataimages/201605/original/images1713853_findface.jpg",
+          otazka: "Existuje rozeznávání obličejů?",
+          popis: "Ano.",
+          odpoved: "ano"
+        },
+      ]
+    </script>
+
+
+    <h1 class="kviz-nadpis">Back to the Future</h1>
+
+    <p class="kviz-popis">
+      Vydržel u a živočich té prachu takový zimě okolo ohrazuje kdy určitě letovisko vlek slona foto sibiře. Patogeny skály pyramidy věder dynamit, deprese indy vyvaří migračních, blíž nepřestaneme zřejmě s obrátily neustálá 2800 vzdálenost, je rozeklané tváře.
+    </p>
+
+
+    <div class="otazky">
+
+      <div id="sablona" class = "otazka sablona">
+
+        <div class="otazka-obal">
+
+
+          <div class="otazka-obsah">
+
+            <h3 class="otazka-nadpis">nadpis</h3>
+
+            <div class="otazka-obrazky">              
+              <img class="otazka-img otazka-img-otazka" src= "">          
+              <img class="otazka-img otazka-img-odpoved" src= "hnusak.jpg">
+
+              <div class="otazka-status">
+                <div  class= "otazka-uspech">
+                  Výborně
+                </div>
+                <div  class= "otazka-neuspech">
+                  Netrefil ses
+                </div>  
+              </div>
+            </div>
+
+
+
+            <p class = "otazka-text"> </p>
+
+            <div class="otazka-tlacitka">
+              <button  class="otazka-ano">
+                ano
+              </button>
+              <button  class="otazka-ne">
+                ne
+              </button>
+            </div>
+
+
+            <p  class= "otazka-popis"> </p>
+
+
+            <button class="otazka-dalsi">
+              <span>Pokračuj na další otázku</span>
+              <img src="arrow-down.png">
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="skore-oblast" id="skore">
+
+      <div class="skore">
+
+        <h2 class="skore-nadpis">
+          Shrnutí kvízu
+        </h2>
+
+        <p class="skore-text">
+          Dosáhnul jsi konce kvízu. Níže se můžeš dočíst, jak ti to šlo.
+        </p>
+
+        <table class="skore-tabulka table table-bordered">
+
+          <tr>
+            <th>Správné odpovědi</th>
+            <th>Počet otázek</th>
+            <th>Úspěšnost</th>
+          </tr>
+
+          <tr>
+            <td><i id="spravneOdpovedi">0</i></td>
+            <td><i id="pocetOdpovedi">0</i></td>
+            <td><strong id="uspesnost">0%</strong></td>
+          </tr>
+
+        </table>
+
+        <h2 class="skore-nadpisodmena">A tady je vaše odměna, kočka jen pro tebe!</h2>
+
+        <div class="skore-odmena">
+          <img src="http://thecatapi.com/api/images/get?format=src&type=gif">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="otazky.js"></script>
+
+  </body>
+</html>
